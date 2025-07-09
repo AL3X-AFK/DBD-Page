@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía para Principiantes</title>
+    <link rel="shortcut icon" href="Imagenes/calavara_icon.ico" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/guia.css" />
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <!-- Logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <!-- Logo -->
+
+          <a class="navbar-brand fs-4" href="index.html"
+            ><img src="Imagenes/logo.png" class="logo" alt=""></a
+          >
+          <!-- Toogle Btn -->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon toggler-icon-white"></span>
+          </button>
+
+          <!-- SideBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-bottom ">
+              <img src="Imagenes/logo.png" class="logo" alt="">
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- SideBar body -->
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 endpe-3"
+              >
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sobre el juego
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="killer.html">Killers</a></li>
+                    <li><a class="dropdown-item" href="survis.html">Survis</a></li>
+                    <li><a class="dropdown-item" href="mapas.html">Mapas</a></li>
+                    <li>
+                      <a class="dropdown-item" href="guia.html"
+                        >Guia para principiantes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Comunidad
+                  </a>
+                  <ul class="dropdown-menu">
+                    
+                    <li>
+                      <a class="dropdown-item" href="creadores.html"
+                        >Creadores de contenido</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="redes.html">Redes</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="comprar.html">Comprar</a>
+                </li>
+
+                <li class="">
+                  <a
+                    href="login.html"
+                    class="vip-button text-decoration-none px-3 py-1 rounded"
+                    >VIP</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <h1>Guia para principiantes</h1>
+    </div>
+
+    <div class="container py-5">
+      <!-- Introducción -->
+      <section id="intro">
+        <h2 class="section-title">
+          <i class="bi bi-book icon"></i> ¿Qué es DBD?
+        </h2>
+        <p>
+          <b>Dead by Daylight</b> es un juego multijugador de terror asimétrico
+          donde 4 supervivientes intentan escapar de un asesino sobrenatural.
+          ¡No hay armas, solo inteligencia, sigilo y miedo! <br />
+          En Dead by Daylight, acecha, corta y sacrifica a tu presa como un
+          asesino monstruoso, o únete a un equipo de cuatro astutos
+          supervivientes que trabajan juntos para escapar.
+        </p>
+      </section>
+
+      <!-- Roles -->
+      <section id="roles">
+        <h2 class="section-title">
+          <i class="bi bi-people-fill icon"></i> Juega como Asesino o
+          Superviviente
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Supervivientes</h5>
+                <p>
+                  Los supervivientes deben cooperar para reparar 5 generadores,
+                  abrir las puertas y escapar con vida. Cada personaje tiene
+                  habilidades únicas (perks) que definen su estilo de juego.
+                  <br />
+                  <br />
+                  - Para encender las puertas de salida y escapar, los
+                  supervivientes deben reparar 5 de los 7 generadores ubicados
+                  en todo el mapa. <br />
+                  <br />
+                  - La mayoría de los asesinos son más rápidos que los
+                  supervivientes. Evite correr en línea recta. <br /><br />
+                  - Si te enganchas, tendrás que confiar en tus aliados para que
+                  te rescaten antes de que se complete el sacrificio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Asesinos</h5>
+                <p>
+                  Desde espectros hasta asesinos en serie, cada killer tiene
+                  poderes especiales. Tu misión: colgar a los supervivientes en
+                  ganchos y evitar que escapen. ¡Caza sin piedad! <br /><br />
+                  - Patrulla y daña estos generadores mientras buscas a tu
+                  próxima víctima. Esté atento a las alertas de ruido creadas
+                  cuando los supervivientes fallan las pruebas de habilidad.
+                  <br /><br />
+                  - A medida que los supervivientes corren por sus vidas,
+                  dejarán marcas de arañazos para que las sigas.
+                  <br /><br />
+                  - Golpear a un Superviviente una vez lo pone en el Estado
+                  Herido. Dos veces, y entran en el Estado de Muerte, lo que te
+                  permite recogerlos, llevarlos a uno de los muchos ganchos de
+                  sacrificio y empalarlos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="slider" reverse="true" style="
+      --width: 200px;
+      --height: 200px;
+      --quantity: 9;
+  ">
+      <div class="list">
+          <div class="item" style="--position: 1"><img src="Imagenes/killers/desconocido/icon.webp" alt=""></div>
+          <div class="item" style="--position: 2"><img src="Imagenes/survis/cheryl/icon.jpg" alt=""></div>
+          <div class="item" style="--position: 3"><img src="Imagenes/killers/dracula/icon.webp" alt=""></div>
+          <div class="item" style="--position: 4"><img src="Imagenes/survis/leon/icon.jpg" alt=""></div>
+          <div class="item" style="--position: 5"><img src="Imagenes/killers/ghostface/icon.webp" alt=""></div>
+          <div class="item" style="--position: 6"><img src="Imagenes/survis/sable/icon.jpg" alt=""></div>
+          <div class="item" style="--position: 7"><img src="Imagenes/killers/kaneki/icon.webp" alt=""></div>
+          <div class="item" style="--position: 8"><img src="Imagenes/survis/steve/icon.jpg" alt=""></div>
+          <div class="item" style="--position: 9"><img src="Imagenes/killers/plaga/icon.jpg" alt=""></div>
+      </div>
+  </div>
+
+      <!-- Consejos -->
+      <section id="consejos">
+        <h2 class="section-title">
+          <i class="bi bi-lightbulb-fill icon"></i> Consejos para Principiantes
+        </h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-dark text-light">
+            <i class="bi bi-arrow-right-circle icon"></i> No corras si no es
+            necesario: dejas rastros.
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <i class="bi bi-arrow-right-circle icon"></i> Aprende los sonidos:
+            el killer puede oír tus errores.
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <i class="bi bi-arrow-right-circle icon"></i> No abandones a tus
+            compañeros (¡salvo que debas!).
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <i class="bi bi-arrow-right-circle icon"></i> Como killer, presiona
+            generadores y aprende rutas.
+          </li>
+          <li class="list-group-item bg-dark text-light">
+            <i class="bi bi-arrow-right-circle icon"></i> Usa perks que se
+            adapten a tu estilo de juego.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Esta guía no oficial fue creada por fans para ayudar a nuevos jugadores.
+      Dead by Daylight © Behaviour Interactive.
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script para que desaparezca el navabar cuando scroleas para abajo -->
+    <script>
+      let prevScrollpos = window.pageYOffset;
+
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset;
+        let navbar = document.querySelector(".navbar");
+
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>

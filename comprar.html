@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar</title>
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/redes.css">
+</head>
+<body>
+  <!--Barra de navegacion-->
+      <!-- Logo -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <!-- Logo -->
+
+          <a class="navbar-brand fs-4" href="index.html"
+            ><img src="Imagenes/logo.png" class="logo" alt=""></a
+          >
+          <!-- Toogle Btn -->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon toggler-icon-white"></span>
+          </button>
+
+          <!-- SideBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-bottom ">
+              <img src="Imagenes/logo.png" class="logo" alt="">
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- SideBar body -->
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 endpe-3"
+              >
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sobre el juego
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="killer.html">Killers</a></li>
+                    <li><a class="dropdown-item" href="survis.html">Survis</a></li>
+                    <li><a class="dropdown-item" href="mapas.html">Mapas</a></li>
+                    <li>
+                      <a class="dropdown-item" href="guia.html"
+                        >Guia para principiantes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Comunidad
+                  </a>
+                  <ul class="dropdown-menu">
+                    
+                    <li>
+                      <a class="dropdown-item" href="creadores.html"
+                        >Creadores de contenido</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="redes.html">Redes</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="comprar.html">Comprar</a>
+                </li>
+
+                <li class="">
+                  <a
+                    href="login.html"
+                    class="vip-button text-decoration-none px-3 py-1 rounded"
+                    >VIP</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="sombra-fondo"></div>
+      <img src="Imagenes/wallpapers/2.jpg" id="wallpaper" alt="">
+
+      <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="glass-card text-center fade-in">
+          <h1 class="mb-4"><b>Distruta del Juego</b></h1>
+          <p class="lead">Disponible en:</p>
+          <div class="d-flex justify-content-center flex-wrap mt-4">
+            <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank" class="text-white me-3" data-bs-toggle="tooltip" title="Steam">
+              <i class="bi bi-steam social-icon"></i>
+            </a>
+            <a href="https://www.playstation.com/es-es/games/dead-by-daylight/" target="_blank" class="text-white me-3" data-bs-toggle="tooltip" title="PalyStation">
+              <i class="bi bi-playstation social-icon"></i>
+            </a>
+            <a href="https://www.xbox.com/es-ES/games/store/dead-by-daylight/C0N22P73QZ60" target="_blank" class="text-white me-3" data-bs-toggle="tooltip" title="Xbox">
+              <i class="bi bi-xbox social-icon"></i>
+            </a>
+            <a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Dead-by-Daylight-1576022.html?srsltid=AfmBOopynfL20vyzBB-S0fRvw4WXqvhGTtwkfKUIo6ZOlWOer3KPbT02" target="_blank" class="text-white me-3" data-bs-toggle="tooltip" title="Switch">
+              <i class="bi bi-nintendo-switch social-icon"></i>
+            </a>
+            <a href="https://store.epicgames.com/es-ES/p/dead-by-daylight" target="_blank" class="text-white me-3" data-bs-toggle="tooltip" title="EpicGames">
+              <i class="bi bi-joystick social-icon"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+  
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script para que desaparezca el navabar cuando scroleas para abajo -->
+    <script>
+      let prevScrollpos = window.pageYOffset;
+    
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset;
+        let navbar = document.querySelector(".navbar");
+    
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    border: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Fira Mono', monospace;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .fondo {
+    position: fixed; /* Fija la imagen al fondo */
+    width: 100vw;
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+.fondo video {
+    width: 100%;
+    filter: blur(px); /* Aplica un desenfoque de 5 píxeles */
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo sin distorsionarse */
+}
+
+/*NavBar*/
+/*Barra nav*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.733);
+    height: 70px;
+    font-family: 'Fira Mono', monospace;
+    transition: opacity 0.5s ease-in-out, top 0.3s ease-in-out;
+  }
+  
+  /*Logo*/
+  .navbar-brand {
+    color: rgb(204, 204, 204);
+    
+  }
+  .logo{
+    height: 45px;
+    position: relative;
+  }
+  
+  /*Opciones*/
+  
+  .nav-link {
+    color: rgba(216, 216, 216, 0.836);
+    text-shadow: 2px 1px 4px black;
+    transition:  0.5s ;
+  }
+  .nav-link:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  }
+  /*Color de sidebar*/
+  @media (max-width: 991px){
+    .sidebar{
+      background-color: rgba(0, 0, 0, 0.637);
+      backdrop-filter: blur(15px);
+    }
+  }
+  .vip-button{
+      background-color: #ff0033;
+      color: black;
+      font-weight: bold;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff0033;
+      transition: all 0.3s ease-in-out;
+      animation: pulse 1.5s infinite alternate;
+  }
+  .vip-button:hover{
+    box-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
+    color: white;
+  }
+
+  .login-cajon{
+    color: white;
+    background: rgba(0, 0, 0, 0.445);
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px black;
+  }
+
+  h1{
+    font-weight: bold;
+    padding: 20px 0px 20px;
+    text-shadow: 2px 1px 4px black;
+    text-align: center;
+  }
+  .login-title{
+    text-align: center;
+  }
+
+  .input-box{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px black;
+  }
+  .input-box label {
+    display: flex;
+    justify-content: space-between; /* Separa el texto y el icono */
+    align-items: center;
+    width: 100%;
+}
+  .input-box input{
+    background-color: transparent;
+    border: none;
+    color: rgb(163, 163, 163);
+  }
+
+  .btn-login{
+    background-color: #ff0033;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0033;
+    transition: all 0.3s ease-in-out;
+    margin: 30px 0px 30px;
+    height: 40px;
+  }
+.btn-login:hover{
+  box-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
+  color: white;
+}
+.texto{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-shadow: 2px 2px 4px black;
+}
+.remember-forgot input{
+  margin-right: 10px;
+  
+}
+.remember-forgot{
+  text-shadow: 2px 2px 4px black;
+}
+.register-link{
+  text-shadow: 2px 2px 4px black;  
+}
+.register-link a{
+  color: #ff0033;
+  
+}
+.register-link a:hover{
+  color: #ff718e;
+}

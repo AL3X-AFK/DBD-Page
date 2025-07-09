@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+  border: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Fira Mono', monospace;
+  color: white;
+}
+
+/*Parte principal*/
+#cover {
+  height: 100vh;
+  position: relative; /* Asegura que el video se ajuste dentro */
+  overflow: hidden; /* Evita desbordamiento */
+}
+
+/*NavBar*/
+/*Barra nav*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.733);
+  height: 70px;
+  font-family: 'Fira Mono', monospace;
+  transition: opacity 0.5s ease-in-out, top 0.3s ease-in-out;
+}
+
+/*Logo*/
+.navbar-brand {
+  color: rgb(204, 204, 204);
+  
+}
+.logo{
+  height: 45px;
+  position: relative;
+}
+
+/*Opciones*/
+
+.nav-link {
+  color: rgba(216, 216, 216, 0.836);
+  text-shadow: 2px 1px 4px black;
+  transition:  0.5s ;
+}
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+/*Color de sidebar*/
+@media (max-width: 991px){
+  .sidebar{
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(15px);
+  }
+}
+.vip-button{
+    background-color: #ff0033;
+    color: black;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0033;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 1.5s infinite alternate;
+}
+.vip-button:hover{
+  box-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
+  color: white;
+}
+
+#wallpaper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  #sombra-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+  }
+
+
+.title{
+    margin-top: 90px;
+    font-weight: bold;
+    color: #ff0033;
+}
+.profile-pic{
+    width: 15%;
+    border-radius: 10px;
+}
+
+.creator-row {
+    background-color: rgba(0, 0, 0, 0.404);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    opacity: 0.6;
+  }
+  
+  .creator-row:hover {
+    background-color: rgba(121, 121, 121, 0.37);
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  
+  .creator-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .btn-outline-light i {
+    font-size: 1.5rem;
+  }

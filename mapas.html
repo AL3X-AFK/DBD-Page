@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapas</title>
+    <link rel="shortcut icon" href="Imagenes/calavara_icon.ico" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/mapas.css" />
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <!-- Logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <!-- Logo -->
+
+          <a class="navbar-brand fs-4" href="index.html"
+            ><img src="Imagenes/logo.png" class="logo" alt=""></a
+          >
+          <!-- Toogle Btn -->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon toggler-icon-white"></span>
+          </button>
+
+          <!-- SideBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-bottom ">
+              <img src="Imagenes/logo.png" class="logo" alt="">
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- SideBar body -->
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 endpe-3"
+              >
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sobre el juego
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="killer.html">Killers</a></li>
+                    <li><a class="dropdown-item" href="survis.html">Survis</a></li>
+                    <li><a class="dropdown-item" href="mapas.html">Mapas</a></li>
+                    <li>
+                      <a class="dropdown-item" href="guia.html"
+                        >Guia para principiantes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Comunidad
+                  </a>
+                  <ul class="dropdown-menu">
+                    
+                    <li>
+                      <a class="dropdown-item" href="creadores.html"
+                        >Creadores de contenido</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="redes.html">Redes</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="comprar.html">Comprar</a>
+                </li>
+
+                <li class="">
+                  <a
+                    href="login.html"
+                    class="vip-button text-decoration-none px-3 py-1 rounded"
+                    >VIP</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div id="sombra-fondo"></div>
+    <img src="Imagenes/wallpapers/hoguera.png" id="wallpaper" alt="">
+
+    <div class="container cartas">
+      <div class="row">
+        <div class="col-md">
+          <div class="card" >
+            <img
+              src="Imagenes/mapas/greenville1.jpg"
+              class="card-img-top map-image-zoomable"
+              alt="Plaza de Greenville"
+              onclick="toggleZoom('Imagenes/mapas/greenville1.jpg')"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Plaza de Greenville</h5>
+              <p class="card-text">
+                Un pedazo de pueblo americano de la ciudad, abandonado hace
+                mucho tiempo, olvidado hace mucho tiempo. Ahora, algo deambula
+                libremente por las calles cubiertas de maleza: una criatura
+                retorcida responsable de una serie de desapariciones en todo el
+                país.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="Imagenes/mapas/silenthill1.jpg"
+              class="card-img-top map-image-zoomable"
+              alt="Silent Hill"
+              onclick="toggleZoom('Imagenes/mapas/silenthill1.jpg')"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Silent Hill</h5>
+              <p class="card-text">
+                La Escuela Primaria Midwich quedó irrevocablemente marcada por
+                una oscura transformación que contorsionó el edificio hasta
+                convertirlo en una manifestación de pesadilla de trauma
+                infantil.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="Imagenes/mapas/rc1.jpg"
+              class="card-img-top map-image-zoomable"
+              alt="Plaza de Greenville"
+              onclick="toggleZoom('Imagenes/mapas/rc1.jpg')"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Raccoon City</h5>
+              <p class="card-text">
+                La comisaría de policía de Raccoon City, un antiguo museo de
+                arte convertido en bastión de la justicia, quedó destrozada por
+                el brote. Incluso los oficiales más valientes se vieron
+                abrumados por los muertos hambrientos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="Imagenes/mapas/ormond1.jpg"
+              class="card-img-top map-image-zoomable"
+              alt="Silent Hill"
+              onclick="toggleZoom('Imagenes/mapas/ormond1.jpg')"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ormond</h5>
+              <p class="card-text">
+                La estación de esquí de Mount Ormond ha estado abandonada hace
+                mucho tiempo. Perdura como un lugar favorito para los jóvenes
+                rebeldes que buscan entregarse a inclinaciones violentas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="Imagenes/mapas/finca1.jpg"
+              class="card-img-top map-image-zoomable"
+              alt="Plaza de Greenville"
+              onclick="toggleZoom('Imagenes/mapas/finca1.jpg')"
+            />
+            <div class="card-body">
+              <h5 class="card-title">La finca MacMillan</h5>
+              <p class="card-text">
+                En el bosque retorcido se encuentra la finca MacMillan, una
+                operación minera que alguna vez fue próspera. Los edificios
+                oxidados emiten crujidos fantasmales, de pie como centinelas a
+                la luz de la luna.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card" >
+            <img
+              src="Imagenes/mapas/fincayamahoca1.jpg"
+              class="card-img-top map-image-zoomable"
+              alt="Silent Hill"
+              onclick="toggleZoom('Imagenes/mapas/fincayamahoca1.jpg')"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Finca Yamaoka</h5>
+              <p class="card-text">
+                El legado de los Yamaoka ha sido bañado en sangre, profanado por
+                la matanza sin sentido. Aunque impresionante de contemplar,
+                siglos de rabia profundamente arraigada han corrompido los
+                extensos terrenos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="imageZoomModal" class="modal">
+      <span class="close-button" onclick="closeZoom()">&times;</span>
+      <img class="modal-content" id="zoomedImage" />
+    </div>
+
+    <style></style>
+
+    <script>
+      // Obtener el modal
+      var modal = document.getElementById("imageZoomModal");
+
+      // Obtener la imagen dentro del modal
+      var zoomedImage = document.getElementById("zoomedImage");
+
+      // Función para abrir el modal y mostrar la imagen ampliada
+      function toggleZoom(imageSrc) {
+        modal.style.display = "block";
+        zoomedImage.src = imageSrc;
+      }
+
+      // Función para cerrar el modal
+      function closeZoom() {
+        modal.style.display = "none";
+      }
+
+      // Cerrar el modal si se hace clic fuera de la imagen
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script para que desaparezca el navabar cuando scroleas para abajo -->
+    <script>
+      let prevScrollpos = window.pageYOffset;
+
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset;
+        let navbar = document.querySelector(".navbar");
+
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>

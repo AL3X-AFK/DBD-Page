@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <title>DBD Fan Page</title>
+    
+    <link rel="shortcut icon" href="Imagenes/calavara_icon.ico">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body>
+    <!--Pantalla principal con video de fondo
+            -autoplay: reproduce automaticamente
+            -loope: lo reproduce en bucle
+            -muted: mutea el video ya que hay navegadores que no reproducen si el video tiene sonido
+        -->
+    <div class="container-fluid" id="cover">
+      <!--Barra de navegacion-->
+      <!-- Logo -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <!-- Logo -->
+
+          <a class="navbar-brand fs-4" href="index.html"
+            ><img src="Imagenes/logo.png" class="logo" alt=""></a
+          >
+          <!-- Toogle Btn -->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon toggler-icon-white"></span>
+          </button>
+
+          <!-- SideBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-bottom ">
+              <img src="Imagenes/logo.png" class="logo" alt="">
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- SideBar body -->
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 endpe-3"
+              >
+                <li class="nav-item dropdown mx-1">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sobre el juego
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="killer.html">Killers</a></li>
+                    <li><a class="dropdown-item" href="survis.html">Survis</a></li>
+                    <li><a class="dropdown-item" href="mapas.html">Mapas</a></li>
+                    <li>
+                      <a class="dropdown-item" href="guia.html"
+                        >Guia para principiantes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Comunidad
+                  </a>
+                  <ul class="dropdown-menu">
+                    
+                    <li>
+                      <a class="dropdown-item" href="creadores.html"
+                        >Creadores de contenido</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="redes.html">Redes</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="comprar.html">Comprar</a>
+                </li>
+
+                <li class="">
+                  <a
+                    href="login.html"
+                    class="vip-button text-decoration-none px-3 py-1 rounded"
+                    >VIP</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <video id="background-video" autoplay loop muted>
+        <source src="Imagenes/v02.mp4" type="video/mp4" />
+        <!-- Mensaje alternativo si el navegador no soporta videos -->
+        Tu navegador no soporta videos.
+      </video>
+
+      <!--Texto con efecto de mnauina de escribir-->
+      <div class="row">
+        <div class="col contenedor-texto">
+          <div id="texto-principal">
+            La pesadilla comienza cuando piensas que estás a salvo.
+          </div>
+        </div>
+      </div>
+      <!--Texto de slide-->
+      <div class="row">
+        <div class="col-12 slide-text">|<br />SCROLL <br />|</div>
+      </div>
+    </div>
+
+    <!-- Botón para activar/desactivar el sonido -->
+    <button class="mute-button" id="mute-btn">🔊 Sonido</button>
+
+    <!--Contenido pag principal-->
+    <div class="contenido-portada container-fluid">
+      <div class="row">
+        <div class="col-sm ilustracion">
+          <img src="Imagenes/ghostface.jpg" class="img-fluid" alt="..." />
+        </div>
+
+        <div class="col-sm info">
+          <div class="contenido-texto">
+            <div class="titulo">KILLERS</div>
+            <div class="texto">
+              ¿Te atreves a ponerte en la piel de un Killer? En Dead by
+              Daylight, serás el cazador imparable, persiguiendo a los
+              supervivientes con habilidades letales. ¿Serás capaz de
+              capturarlos antes de que escapen o caerás en la oscuridad de la
+              desesperación?
+            </div>
+            <a href="killer.html" class="ver-mas-button text-decoration-none">VER MAS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm info">
+          <div class="contenido-texto">
+            <div class="titulo">SURVIS</div>
+            <div class="texto">
+              ¿Tienes lo necesario para sobrevivir? En Dead by Daylight, cada
+              partida es una lucha desesperada por la vida. Trabaja en equipo,
+              sé sigiloso y usa tu ingenio para reparar los generadores y
+              escapar. ¿Podrás burlar al asesino o serás su próxima víctima?
+            </div>
+            <a href="survis.html" class="ver-mas-button text-decoration-none">VER MAS</a>
+          </div>
+        </div>
+
+        <div class="col-sm ilustracion">
+          <img src="Imagenes/steve.jpg" class="img-fluid" alt="..." />
+        </div>
+      </div>
+
+
+
+      <!-- Carrusel -->
+      <div class="row">
+        <div class="col carrusel-texto">
+          GALERIA DE GAMEPLAY
+        </div>
+      </div>
+
+      <div class="row fila-carrusel">
+        <div class="carrusel">
+          <img src="Imagenes/gameplay1.jpg" class="img-fluid elemento" alt="">
+          <img src="Imagenes/gameplay2.webp" class="img-fluid elemento" alt="">
+          <img src="Imagenes/deterioro_gameplay.jpg" class="img-fluid elemento" alt="">
+          <img src="Imagenes/gancho.jpg" class="img-fluid elemento" alt="">
+          <img src="Imagenes/generator_gameplay.webp" class="img-fluid elemento" alt="">
+          <img src="Imagenes/myers_gameplay.jpg" class="img-fluid elemento" alt="">
+        </div>
+      </div>
+      
+
+    
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col pegi">
+          <a href="https://pegi.info/es/que-significan-las-etiquetas">
+          <img src="Imagenes/pegi-18.svg" alt="" /></a>
+          <img src="Imagenes/f2.png" alt="" /> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col copy">
+          © 2015-2025 BEHAVIOUR and Alex Valdez, DEAD BY DAYLIGHT and other related
+          trademarks and logos belong to Behaviour Interactive Inc. All rights
+          reserved.
+        </div>
+      </div>
+    </div>
+
+    <!--Scripts-->
+
+    <!-- Boton de mute -->
+    <script>
+      // Seleccionamos el video y el botón
+      const video = document.getElementById("background-video");
+      const muteBtn = document.getElementById("mute-btn");
+
+      // Asegurar que el video inicie silenciado para evitar bloqueos
+      video.muted = true;
+
+      // Agregamos un evento al botón para mutear/desmutear el video
+      muteBtn.addEventListener("click", () => {
+        video.muted = !video.muted; // Cambia el estado de mute
+        // Actualiza el texto del botón dependiendo del estado de mute
+        muteBtn.textContent = video.muted ? "🔇 Sonido" : "🔊 Sonido";
+      });
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script para que desaparezca el navabar cuando scroleas para abajo -->
+    <script>
+      let prevScrollpos = window.pageYOffset;
+    
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset;
+        let navbar = document.querySelector(".navbar");
+    
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    
+
+  </body>
+</html>
